@@ -1,0 +1,25 @@
+name: Build Tugas 3
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile C++
+        shell: bash
+        run: g++ tugas_3.cpp -o tugas_3.exe -static
+
+      - name: Upload EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: tugas_3-exe
+          path: tugas_3.exe
