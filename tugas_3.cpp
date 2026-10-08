@@ -9,13 +9,20 @@ int main() {
     cout << "=================================" << endl;
     cout << "          MENU MAKANAN" << endl;
     cout << "=================================" << endl;
-    cout << "Soto  : Rp15.000" << endl;
-    cout << "Rawon : Rp20.000" << endl;
-    cout << "Pecel : Rp10.000" << endl;
-    cout << "---------------------------------" << endl;
-    cout << "Teh   : Rp3.000" << endl;
-    cout << "Kopi  : Rp5.000" << endl;
+    cout << "1. Soto  : Rp15.000" << endl;
+    cout << "2. Rawon : Rp20.000" << endl;
+    cout << "3. Pecel : Rp10.000" << endl;
+
+    cout << endl;
+
     cout << "=================================" << endl;
+    cout << "          MENU MINUMAN" << endl;
+    cout << "=================================" << endl;
+    cout << "1. Teh   : Rp3.000" << endl;
+    cout << "2. Kopi  : Rp5.000" << endl;
+    cout << "=================================" << endl;
+
+    cout << endl;
 
     cout << "Jumlah Soto  (0 jika tidak beli): ";
     cin >> soto;
